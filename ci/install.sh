@@ -6,6 +6,6 @@ export PATH="$HOME/miniconda/bin:$PATH"
 conda config --set always_yes yes --set changeps1 no
 conda update -q conda
 
-conda create -q -n test python=$TRAVIS_PYTHON_VERSION numpy scipy
+conda create -q -n test python=$TRAVIS_PYTHON_VERSION numpy scipy=0.19.1
 source activate test
 pip install -r requirements_test.txt
